@@ -1,0 +1,3 @@
+pywalfox
+
+cp --symbolic-link /home/kxn/Repos/config/config ~/.config/i3/config
