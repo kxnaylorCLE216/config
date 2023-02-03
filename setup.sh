@@ -18,10 +18,6 @@ BGREEN='\e[92m'
 BYELLOW='\e[93m'
 RESET='\e[0m'
 
-# Update package list and upgrade system
-sudo pacman -Syu
-
-
 # Update pacman and install keyring to avoid signature problems
 sudo pacman -Syu
 sudo pacman -S manjaro-keyring
@@ -49,8 +45,6 @@ code --install-extension eamodio.gitlens
 sudo pacman -R xfce4 xfce4-goodies
 
 # Base develop packages
-sudo pacman -S git 
-sudo pacman -S fish 
 sudo pacman -S vim
 
 # Install yay
@@ -99,33 +93,6 @@ yay -S youtube
 # Install neofetch
 yay -S neofetch
 
-# Remove Xfce and its extra applications
-sudo pacman -R xfce4 xfce4-goodies
-
-# Install i3 window manager
-yay -S i3-wm
-
-# Install pywal
-yay -S python-pywal
-
-# Install i3status-rust
-yay -S i3status-rust
-
-# Install polybar
-yay -S polybar
-
-# Install rofi
-yay -S rofi
-
-# Install picom
-yay -S picom
-
-# Install conky
-yay -S conky
-
-# Install nitrogen
-yay -S nitrogen
-
 # Install polybar-themes
 yay -S polybar-themes
 
@@ -150,12 +117,6 @@ yay -S powerline-shell
 # Install Ranger
 yay -S ranger
 
-# Install Vim
-yay -S vim
-
-# Install Git
-yay -S git
-
 # Install GIMP
 yay -S gimp
 
@@ -163,20 +124,25 @@ yay -S gimp
 yay -S neofetch
 
 # Install another file manager
-yay -S <chosen-file-manager>
-
-# Install Amberol
-yay -S amberol
-
-# Install Fish shell
-yay -S fish
-
-# Change the default shell to Fish
-chsh -s /usr/bin/fish
-
+yay -S thunar
 
 # Install youtube music
-yay -S youtube-music-bin nextcloud-client thunderbird protonmail-bridge-bin exa chatgpt-desktop-bin amberol
+yay -S youtube-music-bin 
+
+# Install nextcloud-client
+yay -S nextcloud-client 
+
+# Install thunderbird
+yay -S thunderbird 
+
+# Install protonmail-bridge-bin
+yay -S protonmail-bridge-bin 
+
+# Install exa
+yay -S exa 
+
+# Install chatgpt-desktop-bin
+yay -S chatgpt-desktop-bin 
 
 ## Configure GIT ##
 git config --global user.name $AUTHOR
@@ -185,16 +151,7 @@ git config --global user.email $NAME
 ## SSH Config
 ssh-keygen -t rsa -b 2048 -f $HOME/.ssh/id_rsa -N ''
 
-chsh -s $(which fish)
-
-yay -S polybar-themes-git
-
 mkdir ~/Repos
-cd ~/Repos
-
-git clone https://github.com/kxnaylorCLE216/config.git
-
-cp --symbolic-link /home/kxn/Repos/config/config ~/.config/i3/config
 
 # Set i3status-rust as the status bar for i3
 echo "status_command = i3status-rust" >> ~/.config/i3/config
@@ -213,7 +170,7 @@ echo "export QT_STYLE_OVERRIDE=\$(cat ~/.cache/wal/qt5ct.conf | grep -oP 'style=
 cp /usr/share/doc/polybar/config ~/.config/polybar/config
 
 # Choose a polybar theme
-sed -i 's/example-theme/<chosen-polybar-theme>/g' ~/.config/polybar/config
+sed -i 's/example-theme/shapes/g' ~/.config/polybar/config
 
 # Copy a sample rofi configuration file
 cp /usr/share/
@@ -228,12 +185,13 @@ echo "exec_always nitrogen --restore && wal -i \$(< \${HOME}/.config/nitrogen/wa
 cp /usr/share/doc/rofi/config.rasi ~/.config/rofi/config.rasi
 
 # Choose a rofi theme
-sed -i 's/example-theme/<chosen-rofi-theme>/g' ~/.config/rofi/config.rasi
+sed -i 's/example-theme/type-4/g' ~/.config/rofi/config.rasi
+
+# Copy a sample i3status-rust configuration file
+cp /usr/share/doc/i3status-rust/config.toml ~/.config/i3status-rust/config.toml
 
 # Choose an i3status-rust theme
-
-# Set fish as the default shell
-chsh -s $(which fish)
+sed -i 's/example-theme/modern/g' ~/.config/i3status-rust/config.
 
 # Configure powerline-shell
 powerline-shell --install
@@ -267,9 +225,6 @@ sudo pacman -S nemo
 echo "wal -i \`cat ~/.cache/wal/wal\`" >> ~/.config/fish/config.fish
 echo "wal -i \`cat ~/.cache/wal/wal\`" >> ~/.bashrc
 echo "wal -i \`cat ~/.cache/wal/wal\`" >> ~/.zshrc
-
-# Remove XFCE and its applications
-sudo pacman -R xfce4 xfce4-goodies
 
 # Add media playing information to display on Polybar and i3status-rust
 # Add the following lines to your Polybar config file:
