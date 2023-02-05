@@ -47,6 +47,8 @@ sudo pacman -R xfce4 xfce4-goodies
 # Base develop packages
 sudo pacman -S vim
 
+sudo pacman -Syu base-devel curl gcc-fortran gettext zlib
+
 # Install yay
 git clone https://aur.archlinux.org/yay.git
 cd yay
