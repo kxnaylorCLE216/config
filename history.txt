@@ -1,0 +1,317 @@
+    1  pacman -Syu
+    2  sudo pacman -Syu
+    3  ls /bin/i3st*
+    4  cp /etc/i3/config ~/.config/i3/
+    5  mkdir ~/.config/i3
+    6  cp /etc/i3/config ~/.config/i3/
+    7  vim ~/.config/i3/config 
+    8  vim ~/.config/i3/config 
+    9  exit
+   10  mkdir -p ~/.local/share/i3status-rust
+   11  cd mkdir Repos
+   12  ls
+   13  mkdir Repos
+   14  cd Repos/
+   15  ls
+   16  git clone https://github.com/greshake/i3status-rust.git
+   17  fc-list | grep -i "awesome"
+   18  ls
+   19  cd i3status-rust/
+   20  ls
+   21  cd files/
+   22  ls
+   23  cp . -r ~/.local/share/i3status-rust/
+   24  cd ~/.config/
+   25  ls
+   26  exit
+   27  sudo pacman -S i3status-rust
+   28  mkdir /home/kxn/.config/i3status-rust
+   29  cd /usr/share/doc/i3status-rust/examples/
+   30  ls
+   31  cp config.toml /home/kxn/.config/i3status-rust/
+   32  cd /home/kxn/.config/i3status-rust/
+   33  ls
+   34  sudo pacman -S tts-font-awsome
+   35  sudo pacman -S tts-font-awesome
+   36  sudo pacman -S tts-font awesome
+   37  sudo pacman -S tts-font-awesome
+   38  sudo pacman -S firefox
+   39  sudo pacman -S git
+   40  sudo pacman -S ttf-font-awesome 
+   41  sudo pacman -S otf-font-awesome 6.2.1-1
+   42  sudo pacman -S otf-font-awesome
+   43  pacman -S pavcontrol pulseaudio
+   44  sudo pacman -S pavcontrol pulseaudio
+   45  sudo pacman -S pavucontrol pulseaudio
+   46  pulseaudio 
+   47  vim ~/.config/i3status-rust/config.toml 
+   48  ls
+   49  cd ~/.local/
+   50  ls
+   51  cd share/
+   52  ls
+   53  cd i3status-rust/
+   54  ls
+   55  cd themes/
+   56  ls
+   57  sudo pacman -S ticker
+   58  cd Desktop/
+   59  la
+   60  ls
+   61  cat setup.sh 
+   62  chmod +x setup.sh 
+   63  ./setup.sh 
+   64  sudo pacman -S base-devel
+   65  ./setup.sh 
+   66  fish
+   67  sudo pacman -S fish
+   68  sudo pacman -S bluman
+   69  sudo pacman -S blueman
+   70  playerctl
+   71  sudo pacman -S playerctl
+   72  playerctl
+   73  playerctl metadata
+   74  playerctl metadata title
+   75  sudo pacman -S alacritty
+   76  vim .bashrc 
+   77  cd Documents/
+   78  ls
+   79  cd ..
+   80  cd Desktop/
+   81  ls
+   82  cat setup.sh 
+   83  vim ~/.config/i3/config 
+   84  mousepad ~/.config/i3/config 
+   85  alacritty 
+   86  alacritty 
+   87  mousepad ~/.config/i3/config 
+   88  mhwd
+   89  mhwd --usb
+   90  sudo /etc/init.d/bluetooth start
+   91  sudo systemctl status bluetooth.service
+   92  sudo systemctl enable bluetooth.service
+   93  sudo systemctl start bluetooth.service
+   94  sudo vim /etc/bluetooth/main.conf
+   95  sudo pacman -S pulseaudio-bluetooth 
+   96  i3
+   97  i3wm
+   98  cd
+   99  sudo reboot
+  100  yay
+  101  cd ~/.config/i3status-rust/
+  102  ls
+  103  mkdir scripts
+  104  cd scripts/
+  105  sudo systemctl restart NetworkManager
+  106  systemctl status bluetooth.service
+  107  sudo pacman -S manjaro-pipewire
+  108  sudo pacman -S manjaro-pipewire
+  109  sudo reboot
+  110  sudo pacman -S pulseaudio-bluetooth 
+  111  sudo pacman -R majaro-pipewire
+  112  sudo pacman -R manjaro-pipewire
+  113  sudo pacman -S pulseaudio-bluetooth 
+  114  sudo reboot
+  115  sudo pacman -S pulseaudio-alsa 
+  116  sudo pacman -S bluez
+  117  sudo pacman -S bluez-libs
+  118  sudo pacman -S bluez-utils
+  119   pulseaudio --check
+  120   pulseaudio -k
+  121   pulseaudio -D
+  122  sudo reboot
+  123  sudo vim /etc/bluetooth/main.conf
+  124  sudo rfkill unblock bluetooth
+  125  sudo pacman -Qi bluez| grep "^Version:"
+  126  sudo pacman -Sy bluez
+  127  sudo pacman -Sy pulseaudio pulseaudio-utils pavucontrol pulseaudio-module-bluetooth
+  128  sudo service bluetooth restart
+  129  sudo systemctl restart bluetooth.service 
+  130  pulseaudio -k
+  131  cd ~/.config/i3status-rust/
+  132  cd scripts/
+  133  ls
+  134  vim ShowMediaMeta.sh
+  135  chmod +x ShowMediaMeta.sh 
+  136  ./ShowMediaMeta.sh 
+  137  cat ~/.config/i3/config 
+  138  cd
+  139  cat Desktop/setup.sh 
+  140  vim ~/.config/i3status-rust/
+  141  vim ~/.config/i3status-rust/config.toml 
+  142  ls
+  143  cd ~/.config/i3status-rust/scripts/
+  144  ls
+  145  vim ~/.config/i3status-rust/config.toml 
+  146  ls
+  147  ./ShowMediaMeta.sh 
+  148  ls
+  149  ./ShowMediaMeta.sh 
+  150  cd ~/.config/i3status-rust/
+  151  ls
+  152  cd scripts/
+  153  ls
+  154  chmod +x ShowMediaMeta.sh 
+  155  ls
+  156  ./S
+  157  ./ShowMediaMeta.sh 
+  158  cd
+  159  cat Desktop/setup.sh 
+  160  playctrl 
+  161  playerctrl 
+  162  playerctl
+  163  cd ~/.config/i3status-rust/
+  164  ls
+  165  cd scripts/
+  166  ls
+  167  cat ShowMediaMeta.sh 
+  168  ls
+  169  bash ShowMediaMeta.sh 
+  170  sudo pacman -S zscroll-git
+  171  sudo pacman -S zscroll
+  172  yay -S zscroll-git
+  173  bash ShowMediaMeta.sh 
+  174  vim ~/.config/i3status-rust/config.toml 
+  175  vim ~/.config/i3status-rust/config.toml 
+  176  bash $HOME/.config/i3status-rust/scripts/ShowMediaMeta.sh
+  177  fish
+  178  fish
+  179  fish
+  180  bluetoothctl
+  181  bluetoothctl
+  182  sudo pacman -S  bluez-tools
+  183  sudo apt-get install bluez-tools
+  184  bt-agent --capability=NoInputNoOutput
+  185  cat /etc/bluetooth/main.conf 
+  186  sudo pacman -S pulseaudio-module-bluetooth
+  187  bluetoothctl 
+  188  cd ~/.config/
+  189  ls
+  190  fix
+  191  fish
+  192  cd Repos/
+  193  ls
+  194  git clone git@github.com:kxnaylorCLE216/config.git
+  195  cd
+  196  ls -a
+  197  cd .ssh/
+  198  ls
+  199  cat id_rsa.pub 
+  200  cd
+  201  cd Repos/
+  202  git clone git@github.com:kxnaylorCLE216/config.git
+  203  git clone https://github.com/adi1090x/rofi.git
+  204  cd rofi/
+  205  la
+  206  ls
+  207  chmod +x setup.sh 
+  208  ./setup.sh 
+  209  i3status-rs 
+  210  i3status-rust
+  211  i3status-rs
+  212  fish
+  213  fish
+  214  cd Repos/
+  215  git clone git clone --depth=1 https://github.com/adi1090x/polybar-themes.git
+  216  git clone --depth=1 https://github.com/adi1090x/polybar-themes.git
+  217  cd polybar-themes/
+  218  la
+  219  ls
+  220  chmod +x setup.sh 
+  221  ./setup.sh 
+  222  cd
+  223  cd 
+  224  cd ~/.config/polybar/
+  225  ls
+  226  cd ..
+  227  cd i3
+  228  ls
+  229  vim config 
+  230  mpd
+  231  sudo pacman -S mpd
+  232  mpd
+  233  sudo mpd
+  234  cd ~/.config/
+  235  ls
+  236  cd i3status-rust/
+  237  ls
+  238  vim config.toml 
+  239  cd ~/
+  240  cd .config/
+  241  cd i3status-rust/
+  242  cd scripts/
+  243  ls
+  244  ./ShowMediaMeta.sh 
+  245  cd ~/.config/i3status-rust/
+  246  cp config.toml ~/Repos/config/
+  247  cd ~/Repos/config/
+  248  ls
+  249  git add .
+  250  git commit -m "added i3Status-rust config"
+  251  git config --global user.email "terminal109@protonmail.com"
+  252  git config --global user.name "Kyle X Naylor"
+  253  git config --global user.name "Kyle Naylor"
+  254  git config --global --replace-all user.name "Kyle X Naylor"
+  255  git commit -m "added i3Status-rust config"
+  256  git push --all
+  257  sudo poweroff
+  258  cd ~/.config/i3status-rust/
+  259  ;s
+  260  ls
+  261  cat config.toml 
+  262  cat $HOME/.config/i3status-rust/scripts/ShowMediaMeta.sh
+  263  $HOME/.config/i3status-rust/scripts/ShowMediaMeta.sh
+  264  cd ~/.config/i3status-rust/
+  265  cat $HOME/.config/i3status-rust/scripts/ShowMediaMeta.sh
+  266  playerctl metadata xesam:title
+  267  exec playerctl metadata xesam:artist
+  268  cd ~/.config/i3status-rust/
+  269  cat $HOME/.config/i3status-rust/scripts/ShowMediaMeta.sh
+  270  playerctl metadata xesam:artist
+  271  vim config.toml 
+  272  vim config.toml 
+  273  playerctl metadata xesam:title playerctl metadata xesam:artis
+  274  playerctl metadata
+  275  playerctl metadata xesam:title && playerctl metadata xesam:artis
+  276  playerctl metadata xesam:title && playerctl metadata xesam:artist
+  277  playerctl metadata xesam:title xesam:artist
+  278  playerctl --help
+  279  playerctl next
+  280  playerctl +
+  281  playerctl volume +
+  282  playerctl Level 0.1+
+  283  playerctl 0.1+
+  284  playerctl volume
+  285  playerctl volume 1.1
+  286  playerctl volume 1.2
+  287  playerctl volume
+  288  cd ~/.config/i3status-rust/
+  289  ls
+  290  cd scripts/
+  291  ls
+  292  cat ShowMediaMeta.sh 
+  293  title=`exec playerctl metadata xesam:title`
+  294  	artist=`exec playerctl metadata xesam:artist`
+  295  	( echo "$title - $artist" )
+  296  cd ..
+  297  vim config.toml 
+  298  cd ~/.config/i3status-rust/
+  299  cat $HOME/.config/i3status-rust/scripts/ShowMediaMeta.sh
+  300  vim config.toml 
+  301  cd ..
+  302  cd i3
+  303  vim config 
+  304  sudo reboot
+  305  ~/.config/rofi/powermenu/type-3/powermenu.sh
+  306  cd ~/.config/rofi/powermenu/
+  307  ld
+  308  ls
+  309  cd type-1
+  310  ls
+  311  ./powermenu.sh 
+  312  history
+  313  cd
+  314  cd Repos/
+  315  cd config/
+  316  ls
+  317  history >> history.txt
