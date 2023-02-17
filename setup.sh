@@ -144,12 +144,23 @@ yay -S rofi --noconfirm
 # Install i3status-rust
 yay -S i3status-rust --noconfirm
 
-yay -S otf-font-awesome
-yay -S pulseaudio
-yay -S pavucontrol
-yay -S blueman
-yay -S playerctl
-yay -S pulseaudio-bluetooth
+# Install i3status-rust
+yay -S otf-font-awesome --noconfirm
+
+# Install i3status-rust
+yay -S pulseaudio --noconfirm
+
+# Install i3status-rust
+yay -S pavucontrol --noconfirm
+
+# Install i3status-rust
+yay -S blueman --noconfirm
+
+# Install i3status-rust
+yay -S playerctl --noconfirm
+
+# Install i3status-rust
+yay -S pulseaudio-bluetooth --noconfirm
 
 
 # Copy a sample i3 configuration file
@@ -180,6 +191,10 @@ rm -rf rofi
 #sed -i 's/dmenu_run/~/.config/rofi/launchers/type-3/launcher.sh/g' ~/.config/i3/config
 sed -i 's!dmenu_run!~/.config/rofi/launchers/type-3/launcher.sh!g' ~/.config/i3/config
 
+sed -i 's!bindsym Mod1+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"!bindsym Mod1+Shift+e exec --no-startup-id ~/.config/rofi/powermenu/type-1/powermenu.sh!g' ~/.config/i3/config
+
+i3-msg reload
+i3-msg restart
 
 # Copy a sample i3status-rust configuration file
 #cp /usr/share/doc/i3status-rust/config.toml ~/.config/i3status-rust/config.toml
