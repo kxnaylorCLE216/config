@@ -128,7 +128,7 @@ yay -S amberol --noconfirm
 # Install polybar
 yay -S polybar --noconfirm
 
-mkdir ~/Repos
+mkdir -p ~/Repos
 
 # Install polybar-themes
 git clone https://github.com/adi1090x/polybar-themes.git
@@ -144,6 +144,14 @@ yay -S rofi --noconfirm
 # Install i3status-rust
 yay -S i3status-rust --noconfirm
 
+yay -S otf-font-awesome
+yay -S pulseaudio
+yay -S pavucontrol
+yay -S blueman
+yay -S playerctl
+yay -S pulseaudio-bluetooth
+
+
 # Copy a sample i3 configuration file
 cp /etc/i3/config ~/.config/i3/config
 
@@ -152,9 +160,16 @@ sed -i 's/i3-sensible-terminal/alacritty/g' ~/.config/i3/config
 
 echo "exec_always --no-startup-id ~/.config/polybar/launch.sh --shapes" >> ~/.config/i3/config
 
+mkdir -p ~/Backgrounds
+cd ~/Backgrounds
+
+
+curl https://raw.githubusercontent.com/kxnaylorCLE216/config/main/Backgrounds/leonardo-yip-NcWnJmeVtcw-unsplash.jpg?token=GHSAT0AAAAAAB6Y7FZRVJ2XXUAEV4ZTIIMMY7O2BRA >> image01.png
+
 echo "exec_always --no-startup-id ~/.config/polybar/shapes/scripts/pywal.sh /home/kxn/Backgrounds" >> ~/.config/i3/config
 
 # Install polybar-themes
+cd ~/Repos
 git clone https://github.com/adi1090x/rofi.git
 cd rofi
 chmod +x setup.sh
