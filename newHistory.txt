@@ -1,0 +1,16 @@
+   28  cat setup.sh
+   29  curl https://www.wallpapertip.com/wmimgs/224-2247093_wallpaper-hibiscus-flowers-patterns-exotic-leaves.jpg >> image02.png
+   30  curl https://www.wallpapertip.com/wdown/iimRJxo_wallpaper-hibiscus-flowers-patterns-exotic-leaves/ >> image02.png
+   31  bat ~/.ssh/id_rsa.pub
+   32  cat ~/.ssh/id_rsa.pub
+   33  rm -r config
+   34  rm -rf config
+   36  mkdir Repos
+   37  cd Repos
+   38  git clone git@github.com:kxnaylorCLE216/config.git
+   39  cd config
+   40  ls
+   41  vim setup.sh
+   42  cd Repos/config
+   43  history
+   45  touch newHistory.txt

@@ -183,6 +183,11 @@ sed -i 's!dmenu_run!~/.config/rofi/launchers/type-3/launcher.sh!g' ~/.config/i3/
 
 sed -i 's!bindsym Mod1+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"!bindsym Mod1+Shift+e exec --no-startup-id ~/.config/rofi/powermenu/type-1/powermenu.sh!g' ~/.config/i3/config
 
+echo "for_window [class="\^\.\*"] border pixel 0" >> ~/.config/i3/config
+echo "gaps inner 10" >> ~/.config/i3/config
+echo "gaps outer -2" >> ~/.config/i3/config
+yay -S python-pywal --noconfirm
+
 i3-msg reload
 i3-msg restart
 
