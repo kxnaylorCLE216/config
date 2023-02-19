@@ -150,6 +150,8 @@ yay -S playerctl --noconfirm
 # Install i3status-rust
 yay -S pulseaudio-bluetooth --noconfirm
 
+yay -S alacritty --noconfirm
+
 
 # Copy a sample i3 configuration file
 cp /etc/i3/config ~/.config/i3/config
