@@ -42,19 +42,6 @@ git config --global core.editor vim
 echo "export VISUAL=vim" >> ~/.bashrc
 echo "export EDITOR=vim" >> ~/.bashrc
 
-# Install Fish shell
-yay -S fish --noconfirm
-
-# Change the default shell to Fish
-sudo chsh -s $(which fish)
-
-yay -S python3-aur --noconfirm
-
-pip install powerline-shell
-
-# Configure powerline-shell
-echo "powerline-shell" >> ~/.config/fish/config.fish
-
 # Install .NET Core SDK
 sudo pacman -S dotnet-sdk --noconfirm
 
@@ -196,6 +183,10 @@ sed -i 's!bindsym Mod1+Shift+e exec "i3-nagbar -t warning -m 'You pressed the ex
 
 i3-msg reload
 i3-msg restart
+
+git clone https://github.com/MetaKomora/Manjaro-Post-Install-Script && cd Manjaro-Post-Install-Script;
+chmod +x manjaro-post-install-script.sh;
+./manjaro-post-install-script.sh
 
 # Copy a sample i3status-rust configuration file
 #cp /usr/share/doc/i3status-rust/config.toml ~/.config/i3status-rust/config.toml
