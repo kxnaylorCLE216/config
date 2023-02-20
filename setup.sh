@@ -160,8 +160,13 @@ echo "exec_always --no-startup-id ~/.config/polybar/launch.sh --shapes" >> ~/.co
 mkdir -p ~/Backgrounds
 cd ~/Backgrounds
 
+touch image01.png
 
-curl https://raw.githubusercontent.com/kxnaylorCLE216/config/main/Backgrounds/leonardo-yip-NcWnJmeVtcw-unsplash.jpg?token=GHSAT0AAAAAAB6Y7FZRVJ2XXUAEV4ZTIIMMY7O2BRA >> image01.png
+touch image02.png
+
+https://github.com/kxnaylorCLE216/config/raw/main/Backgrounds/image01.png >> image01.png
+
+https://github.com/kxnaylorCLE216/config/raw/main/Backgrounds/image02.png >> image02.png
 
 echo "exec_always --no-startup-id ~/.config/polybar/shapes/scripts/pywal.sh /home/kxn/Backgrounds" >> ~/.config/i3/config
 
