@@ -64,7 +64,7 @@ yay -Syu --noconfirm
 yay -S firefox --noconfirm
 
 # Install alacrity
-yay -S alacrity --noconfirm 
+yay -S alacritty --noconfirm 
 
 # Install youtube
 yay -S youtube --noconfirm 
@@ -85,11 +85,7 @@ yay -S gimp --noconfirm
 yay -S neofetch --noconfirm
 
 # Configure neofetch
-echo 'neofetch' >> ~/.config/fish/config.fish
 echo 'neofetch' >> ~/.bashrc
-
-# Install another file manager
-yay -S thunar --noconfirm
 
 # Install youtube music
 yay -S youtube-music-bin --noconfirm 
