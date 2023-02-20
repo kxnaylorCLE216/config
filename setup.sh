@@ -192,6 +192,9 @@ yay -S python-pywal --noconfirm
 i3-msg reload
 i3-msg restart
 
+https://gitlab.com/pywal_scripts/pywal_i3status-rust.git
+
+
 git clone https://github.com/MetaKomora/Manjaro-Post-Install-Script && cd Manjaro-Post-Install-Script;
 chmod +x manjaro-post-install-script.sh;
 ./manjaro-post-install-script.sh
